@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <!--   FAVICON -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/small/favicon-96x96.png">
+    <!--   CONNECTS THE CSS FILE -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda|Rancho" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--   CONNECT JS FILES  -->
+    <script src="/script.js"></script>
+    <script src="/script2.js"></script>
+    <!--   FONT AWESOME FOR LOGO ICON    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    BOOTSTRAP    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--   JQUERY UI FOR DATEPICKER    -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--  ICON X  -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="/css/style.form.css" rel="stylesheet">
+    </head>
+
+<body>
+    <div id="form-div">
+        <a href="/"> <i class="fa fa-times-circle" aria-hidden="true"></i></a>
+        <header>Details</header>
+        <!--
+        <div class="red_box" id="error_box">
+            <div class="red_box_top">Error</div>
+            <div class="red_box_main" id="error_content"></div>
+        </div>
+-->
+        <form class="form" method="get" action="book.html" name="book_form" onsubmit="return checkForm()">
+            <h2>First Name:</h2>
+            <input name="f_name" type="text" placeholder="your name" id="nameInput" class="form-control" />
+            <h2>Last Name:</h2>
+            <input name="l_name" type="text" placeholder="last Name" id="lnameInput" class="form-control" />
+            <h2>Phone Number:</h2>
+            <input name="phone" type="text" placeholder="phone" id="telInput" class="form-control" />
+            <h2>E-mail:</h2>
+            <input name="email" type="text" placeholder="email" id="emailInput" class="form-control" />
+            <h2>Address:</h2>
+            <input name="address" type="text" placeholder="address" id="addrInput" class="form-control" />
+            <h2>Adults:</h2>
+            <select class="form-control" name="adults" id="adluInput">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <h2>Children:</h2>
+            <select class="form-control" name="Children" id="chilInput">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <h2>Rooms:</h2>
+            <select class="form-control" name="Rooms" id="roomInput">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <h2>Please discribe any further needs:</h2>
+            <textarea name="text" placeholder="Comment" id="messageInput" class="form-control"></textarea>
+            <input type="submit" value="Book" id="book" /> </form>
+    </div>
+</body>
+
+</html>

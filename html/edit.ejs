@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--   FAVICON -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/small/favicon-96x96.png">
+    <!-- CONNECTS WEB FONT   -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda|Rancho" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--   CONNECT JS FILES  -->
+    <script src="/script.js"></script>
+    <script src="/script2.js"></script>
+    <!--   FONT AWESOME FOR LOGO ICON    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    BOOTSTRAP    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--   JQUERY UI FOR DATEPICKER    -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- CONNECTS TO THE CSS FILE -->
+    <link href="/css/style.form.css" rel="stylesheet">
+ </head>
+
+<body>
+    <div id="form-div">
+        <a href="/"> <i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+    <header>Edit Contact</header>
+
+    <form action="/contacts/<%= contact._id %>?_method=PUT" method="post">
+
+        <input type="text" name="contact[fName]"  class="form-control" value="<%= contact.fName%>"><br>
+        <input type="text" name="contact[email]"  class="form-control" value="<%= contact.email%>" ><br>
+        <input type="number" name="contact[phone]"  class="form-control" value="<%= contact.phone%>"><br>
+        <input type="text" class="comment" name="contact[comment]" class="form-control" value="<%= contact.comment%>">
+        <br>
+        <button>Update</button>
+
+
+    </form>
+
+    <a href="/contacts">View All Comments</a>
+</body>
+
+</html>

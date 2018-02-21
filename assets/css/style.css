@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+    body {
+        background-image: url('../images/1.jpg');
+        background-repeat: no-repeat;
+    }
+  
+
+    /*                      ALL HTML CONTAINER                    */
+    /*                      ALL HTML CONTAINER                    */
+    /*                      ALL HTML CONTAINER                    */
+    #wrapper1 {
+        margin: 0.5% 1%;
+    }
+    .logoImg {
+        float: left;
+        width: 165px;
+        height: 150px;
+    }
+    .logoImg i {
+        font-size: 150px;
+        display: block;
+        color: white;
+    }
+    .welcome {
+        width: 100%;
+        margin-left: 200px;
+    }
+    .welcome h1 {
+        color: white;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 250%;
+    }
+    /*                      MENU CONTAINER                    */
+    /*                      MENU CONTAINER                    */
+    /*                      MENU CONTAINER                    */
+    #menu {
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+    #menu ul li {
+        float: left;
+        list-style: none;
+        width: 100px;
+    }
+    #menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 120%;
+        font-style: italic;
+        text-align: center;
+        line-height: 35px;
+        display: block;
+        background: linear-gradient( #201B15, transparent);
+    }
+    #menu ul li:first-child a {
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    #menu ul li:last-child a {
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    /*                      SECTION 1 CONTAINER                    */
+    /*                      SECTION 1 CONTAINER                    */
+    /*                      SECTION 1 CONTAINER                    */
+    #section1 {
+        float: left;
+        margin-top: 30px;
+        background: linear-gradient( #201B15, transparent);
+        border-radius: 8px;
+        max-width: 180px;
+        padding: 10px;
+    }
+    #dateBox h2 {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 121%;
+        color: white;
+        line-height: 35px;
+    }
+    #dateBox input {
+        border-radius: 8px;
+        border: 0.5px solid black;
+        max-width: 150px;
+        color: white;
+        background: transparent;
+        text-align: center;
+        border-color: white;
+    }
+    .ui-datepicker {
+        background: linear-gradient(black, white);
+        border-radius: 8px;
+        padding: 5px;
+        color: white;
+        width: 150px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #calculate,
+    #clear {
+        width: 50px;
+        color: white;
+        font-family: 'Berkshire Swash', cursive;
+    }
+    /*                      SECTION 2 CONTAINER                    */
+    /*                      SECTION 2 CONTAINER                    */
+    /*                      SECTION 2 CONTAINER                    */
+    #section2 {
+        float: left;
+        margin-left: 50px;
+        max-width: 800px;
+    }
+    #view {
+        margin-left: 6%;
+        padding: 2% 5%;
+        background: linear-gradient( #201B15, transparent);
+        color: white;
+        border-radius: 8px;
+        display: none;
+        height: 500px;
+        /*
+    overflow-y: scroll;
+    height:500px;
+*/
+    }
+    #view header {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 120%;
+        margin-bottom: 15px;
+        line-height: 40px;
+    }
+    #view p {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 18px;
+    }
+    #villMap {
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+   
+    .fa-times-circle {
+        float: right;
+        cursor: pointer;
+    }
+
+
+

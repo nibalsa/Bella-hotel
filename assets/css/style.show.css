@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/17.jpg');
+    background-size: cover;
+}
+
+
+header {
+    font-size: 20px;
+    font-family: 'Berkshire Swash', cursive;
+    line-height: 40px;
+    color: #572200;
+    margin: 20px 0 10px 20px;
+}
+
+.template{
+    width: 600px;
+    min-height: 400px;
+    margin: 20px 0 0 150px;
+    padding: 50px;
+    background: linear-gradient( #201B15, transparent);
+    color: white;
+    border-radius: 8px;
+   
+}
+
+h4{
+   font-family: 'Berkshire Swash', cursive;
+    font-size: 140%;
+    color: white;
+    line-height: 25px;
+    display: inline;
+    margin-left: 30px;
+    text-decoration:underline;
+    
+}
+
+h5{
+   font-family: 'Berkshire Swash', cursive;
+    font-size: 130%;
+    color: white;
+    line-height: 25px;
+    margin-left: 50px;  
+}
+
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 106%;
+    text-align: justify;
+    margin-bottom: 70px;
+
+}
+
+
+button{
+
+ width: 15%;
+    height: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 5%;
+     color: #572200; 
+    display: inline;
+    margin: 0; 
+    margin-left: 400px;
+}
+
+#edit{
+    margin-top: 30px;
+    text-decoration: none;
+    
+}
+#back{
+    font-family: 'Berkshire Swash', cursive;
+     color: black; 
+    font-size: 120%;
+}
+#back:hover{
+    font-weight: bold;
+}

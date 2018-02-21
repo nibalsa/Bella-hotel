@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/17.jpg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #572200;
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+header {
+    font-size: 20px;
+    font-family: 'Berkshire Swash', cursive;
+    line-height: 40px;
+    color: #572200;
+    margin: 20px 0 10px 20px;
+}
+
+h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 110%;
+    color: black;
+    line-height: 25px;
+    display: inline;
+    margin-left: 50px;
+}
+
+input,
+select, textarea{
+    display: block;
+    margin: 5px 0 0 5%;
+    margin-right: 5%;
+    max-width: 60%;
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+
+
+.comment{
+    height:50px;
+    width:60%;
+}
+
+#book{
+    width: 20%;
+    height: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+     color: #572200;
+}
+
+#send, button{
+    width: 15%;
+    height: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 5%;
+     color: #572200;
+}
+
+#viewCon{
+    float: left;
+    font-family: 'Berkshire Swash', cursive;
+    margin-left: 5%;
+    margin-top: 50px;
+    font-size: 110%;
+    color: #572200;
+
+}
+
+#error_box {
+  color: red;
+  font-size: 16px;
+  margin: 10px 120px;
+}
+
+/***********          error box             ***********/
+
+
+/*
+.red_box{
+margin:20px 0;
+border:2px dashed #990000;
+background-color:#ffffff;
+padding:2px;
+display:none;
+}
+
+.red_box_top{
+height:20px;
+line-height:20px;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+color:#ffffff;
+background-color:#990000;
+padding:5px;
+}
+
+.red_box_main{
+line-height:20px;
+font-family:arial;
+font-size:14px;
+color:#000000;
+background-color:#ffeaea;
+padding:5px;
+}
+
+.alert_box{
+width:200px;
+height:30px;
+line-height:30px;
+font-family:arial;
+font-size:14px;
+color:red;
+padding-left:10px;
+}
+
+
+*/

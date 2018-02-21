@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #2B2410;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+header {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 120%;
+    line-height: 40px;
+    color: white;
+    margin: 20px 0 0 20px;
+}
+
+#gallery {
+    margin: 10px auto;
+    width: 1000px;
+    height: 580px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+#gallery img {
+    width: 1000px;
+    height: 580px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.smlImg {
+    position: fixed;
+    bottom: 20px;
+    left: 26%;
+    margin: 0 auto;
+    background: linear-gradient( #201B15, transparent);
+    width: 650px;
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 5px;
+    display: block;
+    z-index: 3;
+}
+
+.smlImg ul {
+    margin-left: 10px;
+}
+
+.smlImg li {
+    font-size: 20px;
+    color: white;
+    list-style-type: none;
+    float: left;
+    margin-left: 5px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <!--   FAVICON -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/small/favicon-96x96.png">
+    <!-- CONNECTS WEB FONT   -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda|Rancho" rel="stylesheet">
+    <!--   CONNECT JS FILES  -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- CONNECTS CSS FILE   -->
+    <link href="/css/style.contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--   JQUERY UI FOR DATEPICKER    -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </head>
+<body>
+<header>Contacts</header>
+  <a href="/"> <i class="fa fa-times-circle" aria-hidden="true"></i></a>
+<% contacts.forEach(function(contact){ %>
+    <div id="contact">
+    <h3><%= contact.fName%></h3>
+    <h5><%= contact.email%></h5>
+    <h5><%= contact.phone%></h5>
+    <p><%= contact.comment%></p>
+    <br>
+    <a href="/contacts/<%= contact._id %>">View More...</a>
+
+    </div>
+<% }); %>
+    <div style="clear:both"></div>
+
+
+
+</form>
+
+    <a href="/">Back To The Site</a>
+
+    </body>
+</html>

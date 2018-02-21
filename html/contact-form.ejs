@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <!--   FAVICON -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/small/favicon-96x96.png">
+    <!-- CONNECTS WEB FONT   -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda|Rancho" rel="stylesheet">
+    <!--   CONNECT JS FILES  -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <!--   FONT AWESOME FOR LOGO ICON    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    BOOTSTRAP    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--   CONNECTS TO CSS FILE -->
+    <link href="/css/style.form.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form-div">
+        <a href="/"> <i class="fa fa-times-circle" aria-hidden="true"></i></a>
+
+    <header>Contact Us</header>
+    <% if(errors){ %>
+      <div id="error_box">
+          <ul>
+          <% errors.forEach(function( err){ %>
+              <li> <%= err.msg %> </li>
+          <% }) %>
+          </ul>
+      </div>
+    <%}%>
+
+    <form action="/contacts" method="post" name="contact_form" onsubmit="return checkForm()">
+
+        <input type="text" required="required" name="fName" placeholder="Full Name" class="form-control" value=""><br>
+        <input type="email" required="required" name="email" placeholder="Email" class="form-control" value=""><br>
+        <input type="number" required="required" name="phone" placeholder="Phone Number" class="form-control" value=""><br>
+        <input type="text" required="required" name="comment" class="form-control comment" placeholder="Your Comment" value=""><br>
+        <input type="submit" value="Send" id="send">
+
+    </form>
+
+    <a href="/contacts" id="viewCon">View All Contacts</a>
+</body>
+
+</html>

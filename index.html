@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="" ng-app="myModule1">
+
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Hotel Site</title>
+    <!--   FAVICON -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/small/favicon-96x96.png">
+    <!--   CONNECTS THE CSS FILE -->
+    <link href="/css/style.css" rel="stylesheet">
+    <!--    BOOTSTRAP    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--   CONNECTS WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda|Rancho" rel="stylesheet">
+    <!--   FONT AWESOME FOR LOGO ICON    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    CONNECTS ANGULAR JS  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <!--   CONNECT JQuery  -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--   CONNECT JS FILES  -->
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+    <!--   JQUERY UI FOR DATEPICKER    -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+<body>
+    <!--------------------------------bg-slideshow----------------------->
+    <!--
+    <div id="nextimg"></div>
+    <div id="firstimg"></div>
+-->
+    <div id="wrapper1">
+        <!-----------------------------------logo---------------------------------->
+        <!-----------------------------------logo---------------------------------->
+        <!-----------------------------------logo---------------------------------->
+        <div id="header">
+            <div class="logoImg"> <i class="fa fa-gg" aria-hidden="true"></i> </div>
+            <div class="welcome">
+                <h1>Welcome To Billa Hotel Site ...</h1></div>
+            <!-----------------------------------MENU---------------------------------->
+            <!-----------------------------------MENU---------------------------------->
+            <!-----------------------------------MENU---------------------------------->
+            <nav id="menu">
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Rooms</a></li>
+                    <li><a href="">Our Village</a></li>
+                    <li><a href="">Map</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="/contacts/form">Contact</a></li>
+                </ul>
+            </nav>
+            <!--      END OF HEADER       -->
+        </div>
+        <div style="clear:both"></div>
+        <!-----------------------------------CHECK PRICE----------------------->
+        <!-----------------------------------CHECK PRICE----------------------->
+        <!-----------------------------------CHECK PRICE----------------------->
+        <div id="section1">
+            <aside id="dateBox">
+                <h2>Check Prices </h2>
+                <form method="get" action="/fill-form.html" name="date_form">
+                <h2>Arrival</h2>
+                <input type="text" name="arrivDate" value="" id="from">
+                <h2>Departure</h2>
+                <input type="text" name="departDate" value="" id="to">
+                <br>
+                <br>
+                <input id="calculate" type="submit" value="Check">
+                    </form>
+            </aside>
+            <!--  END OF SECTION 1  -->
+        </div>
+        <!-----------------------------------MENU CONTENT---------------------->
+        <!-----------------------------------MENU CONTENT---------------------->
+        <!-----------------------------------MENU CONTENT---------------------->
+        <div id="section2">
+            <div>
+                <article id="view"> </article>
+            </div>
+            <!--  END OF SECTION 2  -->
+        </div>
+
+        <div style="clear:both"></div>
+    </div>
+</body>
+
+</html>
